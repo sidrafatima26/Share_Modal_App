@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+}
+
+.circle1 {
+  background: linear-gradient(-25deg, #eccdb4, #fea1a1);
+  box-shadow: 0 0 50px #f9fbe7;
+  animation: circle1Anim 15s infinite;
+}
+
+@keyframes circle1Anim {
+  50% {
+    left: 33%;
+    top: 4%;
+    scale: 1.11;
+  }
+}
+
+.circle2 {
+  background: linear-gradient(-25deg, #eccdb4, #fea1a1);
+  box-shadow: 0 0 50px #f9fbe7;
+  animation: circle2Anim 8s infinite;
+}
+
+@keyframes circle2Anim {
+  50% {
+    bottom: 6%;
+    right: 31%;
+  }
+}
+
+.modal {
+  scale: 0;
+  backdrop-filter: blur(10px);
+}
+
+.modal-header {
+  border-bottom: 1px solid #ffffff88;
+}
+
+.active {
+  scale: 1;
+  backdrop-filter: blur(10px);
+}
+
+.overlay {
+
+    pointer-events: none;
+   
+
+}
+
+.overlayactive {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+@media (max-width: 850px) {
+  .card-wrapper {
+    max-width: 250px;
+    width: 300px;
+  }
+
+  .bottom-group {
+    flex-direction: column;
+  }
+
+  .modal {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-wrapper {
+    position: static;
+    top: 0;
+    left: 0;
+    translate: 0 0;
+    margin: 0 12px;
+    padding: 0 10px;
+  }
+
+  .card-wrapper div img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .user-name h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal {
+    width: 80vw;
+  }
+}
