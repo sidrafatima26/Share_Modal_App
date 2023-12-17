@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="ShareModalApp.css">
+    <link rel="icon" href="SMFav.png">
+
+    <title> Profile | Share Modal App </title>
+</head>
+<body class="bg-[#FBE2D5]">
+
+
+<div class="fixed top-[5%] left-[30%] w-[13em] h-[13em] border-[50%] rounded-full circle1"></div>
+<div class="absolute bottom-[5%] right-[30%] w-[19em] h-[19em] border-[50%] circle2 rounded-full"></div>
+
+<div class="w-[100vw] h-[100vh]">
+    <div class="absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 h-[494px] w-[450px] flex flex-col items-center justify-evenly pt-[20px] pr-[50px] pb-[20px] pl-[50px] rounded-[15px] text-[#ffffff] backdrop-blur-lg border-[2px] border-solid border-[#ffffff30] bg-[#ffffff1a] mx-auto">
+           <div > <img src="photo.jpeg" alt="" width="154px" height="154px" class="border-[2px] border-solid border-[#ffffff30] rounded-[50%]"  > </div>
+           <div class="text-center text-3xl font-bold"> <h2> Sidra Fatima </h2> </div>
+           <div class="text-center text-2xl font-bold"> <h3> Frontend Developer, Wipro </h3> </div>
+           <div class="flex justify-center items-center gap-[10px] ">
+                <button onclick="openModal()" class="flex justify-center items-center gap-[7px] pt-[9px] pr-[12px] pb-[9px] pl-[12px] bg-[#ffffff00] capitalize rounded text-[#ffffffb9] cursor-pointer hover:bg-[#ffffffb9] hover:text-[#fea1a1] border-[2px] border-solid border-[#ffffffb9] font-bold transition-all duration-300">
+                    <i class="fa-solid fa-share"></i>
+                    <p> Share My Profile </p>
+                </button>
+                <button class="flex justify-center items-center gap-2 capitalize w-[150px] pt-[9px] pr-[12px] pb-[9px] pl-[12px] rounded text-[#ffffffb9] cursor-pointer transition-all duration-300 hover:bg-[#ffffffb9] hover:text-[#fea1a1] border-[2px] border-solid border-[#ffffffb9] font-bold">
+                    <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                    <p> Follow Me </p>
+                </button>
+           </div>
+    </div>
+</div>
+<div class="fixed top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 w-[554px] bg-[#f3bbbb88] pt-[20px] pr-[25px] z-1 pb-[20px] pl-[25px] rounded-[20px] text-[#ffffff] transition-all duration-500 ease-in-out border-[2px] border-solid border-[#ffffff59] modal">
+    <div class="flex flex-row mb-[25px] justify-between items-center pb-12px text-[30px] font-bold modal-header">
+        <h1> Share My Profile </h1>
+        <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark cursor-pointer "></i>
+        </div>
+    </div>
+    <div >
+        <h3 class="text-[20px] font-bold">Share this via</h3>
+        <div class="mt-[20px] flex justify-between items-center flex-wrap">
+            <a href="#" class="relative text-[27px] p-[30px] rounded-[50%] w-[30px] h-[30px] flex justify-center items-center mt-[10px] mb-[25px] gap-[10px] transition-all duration-500 border-[1px] border-solid text-[#F26207] border-[#F26207] hover:bg-white hover:text-[#fff]"> <img src="credly-logo.svg" alt="" height="40px" width="40px" class="absolute"> </i> </a>
+            <a href="#" class="text-[27px] p-[30px] rounded-[50%] w-[30px] h-[30px] flex justify-center items-center mt-[10px] mb-[25px] gap-[10px] transition-all duration-500 border-[1px] border-solid text-[#0072b1] border-[#0072b1] hover:bg-[#0072b1] hover:text-[#fff]"> <i class="fa fa-linkedin"> </i> </a>
+            <a href="#" class="text-[27px] p-[30px] rounded-[50%] w-[30px] h-[30px] flex justify-center items-center mt-[10px] mb-[25px] gap-[10px] transition-all duration-500 border-[1px] border-solid text-black border-black hover:bg-black hover:text-[#fff]"> <i class="fa fa-github"> </i> </a>
+            <a href="#" class="relative text-[27px] p-[30px] rounded-[50%] w-[30px] h-[30px] flex justify-center items-center mt-[10px] mb-[25px] gap-[10px] transition-all duration-500 border-[1px] border-solid text-[#F26207] border-[#F26207] hover:bg-gray-200 hover:text-[#fff]"> <img src="replit-icon.svg" alt="" height="25px" width="25px" class="absolute"> </i> </a>
+            <a href="#" class="text-[27px] p-[30px] rounded-[50%] w-[30px] h-[30px] flex justify-center items-center mt-[10px] mb-[25px] gap-[10px] transition-all duration-500 border-[1px] border-solid text-[#1c99e6] border-[#1c99e6] hover:bg-[#1c99e6] hover:text-[#fff]"> <i class="fa-regular fa-file-lines"></i> </a>
+
+        </div>
+    </div>
+    
+</div>
+
+<div onclick="closeModal()" class="overlay" ></div>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script src="ShareModalApp.js"></script>
+</body>
+</html>
