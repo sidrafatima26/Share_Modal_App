@@ -4,7 +4,7 @@ Welcome to my portfolio website repository! This website showcases my skills, pr
 
 ## Overview
 
-This repository contains the codebase for my personal portfolio website. The site is built using HTML, CSS, Tailwind and JavaScript. It features a responsive design to ensure a great experience across various devices.
+This repository contains the codebase for my personal contact website. The site is built using HTML, CSS, Tailwind and JavaScript. It features a responsive design to ensure a great experience across various devices.
 
 ## Features
 
